@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>おみくじ</title>
+</head>
+<body>
+
+<header>
+    <h1>おみくじ</h1>
+</header>
+
+<main>
+    <ul>
+        <li id="pull">おみくじを引く</li>
+    </ul>
+    <p id="echo"></p>
+</main>
+
+<footer>フッター</footer>
+<script>
+    // Clickイベントのブロック
+const pull = document.querySelector("#pull");
+pull.onclick =  function(){
+        // 乱数をつくる
+        const num = Math.ceil(Math.random()*5);
+
+        // 乱数をIF分岐処理で分ける
+        // 条件にあっていればalert()で表示
+        if(num==1){
+            const test = document.querySelector("#test");
+            test.innerHTML="大吉";
+            test.innerHTML='<img src="daikiti.jpg">';
+        }
+        if(num==2){
+            const test = document.querySelector("#test");
+            test.innerHTML="中吉";;
+            test.innerHTML='<img src="tyuukiti.jpg">';
+        }
+        if(num==3){
+            const test = document.querySelector("#test");
+            test.innerHTML="小吉";;
+            test.innerHTML='<img src="syouiti.jpg">';
+        }
+        if(num==4){
+            const test = document.querySelector("#test");
+            test.innerHTML="吉";;
+            test.innerHTML='<img src="kiti.jpg">';
+        }
+        if(num==5){
+            const test = document.querySelector("#test");
+            test.innerHTML="凶";;
+            test.innerHTML='<img src="kyou.jpg">';
+        }
+
+
+
+        
+
+}
+</script>
+</body>
+</html>
