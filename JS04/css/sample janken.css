@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    color:#7c5555;
+    background-color: #b1d4f7;
+    
+}
+header{
+    background-color: rgb(225, 231, 164);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+    text-align: center;
+
+    outline: none;
+    
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+
+    
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid rgb(136, 99, 99);
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: rgba(230, 181, 104, 0.383);
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+
+    
+
+}
+li:hover{
+    background: #00091370;
+    color:#fff;
+}
+#judgment{
+    color: #2a0c7a;
+    text-align: center;
+
+}
+
+#gu_btn{
+    color: #2a0c7a;
+    
+}
+
+#cho_btn{
+    color: #2a0c7a;
+    
+}
+
+#par_btn{
+    color: #2a0c7a;
+    
+}
+
+#title{
+    text-align: center;
+
+}
+
+#gu_btn{
+    padding: 1em;
+    margin: 2em auto;
+    width: 10%;
+    color: #565656;
+    background: #99ffca;
+    box-shadow: 0px 0px 0px 5px #99ffca;
+    border: 2px dashed #009e4b;
+    border-radius: 5px;
+}
+
+#cho_btn{
+    padding: 1em;
+    margin: 2em auto;
+    width: 10%;
+    color: #565656;
+    background: #99ffca;
+    box-shadow: 0px 0px 0px 5px #99ffca;
+    border: 2px dashed #009e4b;
+    border-radius: 5px;
+}
+
+#par_btn{
+    padding: 1em;
+    margin: 2em auto;
+    width: 10%;
+    color: #565656;
+    background: #99ffca;
+    box-shadow: 0px 0px 0px 5px #99ffca;
+    border: 2px dashed #009e4b;
+    border-radius: 5px;
+}
