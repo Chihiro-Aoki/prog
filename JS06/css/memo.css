@@ -1,0 +1,93 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    width:100%;
+    background-color:rgb(230, 187, 164);
+    background-image:
+    radial-gradient(#a8dad8c7 30%, transparent 20%),
+    radial-gradient(#d6fa73b7 10%, transparent 20%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+header{
+    background-color: rgb(255, 183, 183);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+h1{
+    font-size: 100%;
+}
+main{
+    width:100%;
+    display: block;
+    border-bottom:1px solid #ccc;
+    position:relative;
+    
+}
+footer{
+    background-color: rgb(112, 185, 112);
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid rgb(198, 218, 113);
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #2d338f;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:96%;
+    font-size: 80%;
+    margin: 0 3%;
+    text-align: center;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: rgba(198, 168, 218, 0.815);
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    color:#e7b11b;
+}
+li:hover{
+    background: #e7876f;
+    color:#fff;
+}
+textarea{
+  margin: 10px 3%;
+  width: 95%;
+  height: 100px;
+  font-size:80%;
+  box-shadow: 3px 3px 3px 3px #555;
+  background-color:rgb(241, 239, 239);
+}
+#key{
+    margin:0 3%;
+    width: 95%;
+    font-size:80%;
+    background-color: #5f86b3;
+    box-shadow: 3px 3px 3px 3px #555;
+}
+table{
+    margin: 20px 3%;
+    border:1px solid #8df5a7;
+    width:96%;
+    
+}
+th{
+    width:3%;
+    font-size:24px;
+    background-color:#c06464;
+    border-bottom: 1px solid #8df5a7;
+}
+td{
+    font-size:16px;
+    background-color:rgb(241, 239, 239);
+    border-bottom: 1px solid #8df5a7;
+}
