@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/quizu.css">
+<title>クイズ練習（複数）</title>
+</head>
+<body>
+
+<header>
+    <h1>クイズ練習（複数）</h1>
+    <h2>1問目</h2>
+</header>
+
+<main>
+  <p id="quest">ここに問題が出題されます</p>
+  <p>
+    <input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span>
+    <input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span>
+    <input type="radio" name="toi" value="3"><span id="toi3">選択肢３</span>
+
+  </p>
+</main>
+
+<footer>
+  <h3>正解数</h3>
+</footer>
+<script>
+//ここから記述領域［START］
+
+  //以下に配列を記述してください。
+  //問題文[配列]
+  const qs = ["通るときには閉まって、通らないときには開いているものは何？",
+  "話すことがとても好きな道具は何？",
+  "世界の真ん中にいる虫は何？",
+  "飲むと怒られる飲み物は何？",
+  "かんばんの中に隠れている動物は何？",
+  "ぼうしの中に入っている動物は？"
+  ];
+    
+  //回答選択肢[多重配列]
+  const toi = [
+  ["踏み切り","洗濯機","冷蔵庫"],
+  ["スプーン","シャベル","しゃもじ"],
+  ["てんとう虫","カマキリ","蚊"],
+  ["オレンジジュース","コーラ","ジンジャエール"],
+  ["いぬ","かば","さる"],
+  ["うし","ライオン","とら"]
+  ];
+
+    
+  //答え[配列]
+  const ans = [1, 2, 3, 2, 2, 1];
+
+  //1.最初の問題文＆回答選択肢＆回答値を設定
+   let i = 0;
+   $("#quest").text( qs [i] );
+   $("#toi1").text( toi [i][0] );
+   $("#toi2").text( toi [i][1] );
+   $("#toi3").text( toi [i][2] );
+   $("#toi1").text( toi [i][3] );
+   $("#toi2").text( toi [i][4] );
+   $("#toi3").text( toi [i][5] );
+
+  //2.ラジオボタンをクリックしたらイベント発生！(クリックイベント)
+
+  $("[name=toi]").on("change",function(){
+     const v = $(this).val();
+     if(ans [i] == v){                 //vは押した場所
+       $("h1").text("正解！"); 
+       $("h3").text((i)+"問正解");
+     }else{
+       $("h1").text("不正解！"); 
+     }
+
+    
+    if(i < 5 ){
+    i++;
+    }
+    // if (i < 5, i++ ){
+    // alert("終了");
+    // }
+
+   
+   $("h2").text([i+1]+"問目");
+   $("#quest").text( qs [i] );
+   $("#toi1").text( toi [i][0] );
+   $("#toi2").text( toi [i][1] );
+   $("#toi3").text( toi [i][2] );
+   $("#toi4").text( toi [i][3] );
+   $("#toi5").text( toi [i][4] );
+   $("#toi6").text( toi [i][5] );//配列に入れるiが１プラウされます。
+
+  });
+
+
+
+
+
+
+//ここまでが記述領域［END］
+</script>
+</body>
+</html>
